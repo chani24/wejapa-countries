@@ -87,6 +87,8 @@ export default {
             
             this.currentState = "";
             this.currentCity = "";
+            this.states = [];
+            this.cities = [];
             const country = event.target.value;
             console.log(this.allCountries)
 
@@ -104,6 +106,7 @@ export default {
 
         onStateChange(event){
             this.currentCity = "";
+            this.cities = [];
             const state = event.target.value;
            const stateDetails =  this.countriesDetails.states.find(states => states.name == state)
            console.log()
