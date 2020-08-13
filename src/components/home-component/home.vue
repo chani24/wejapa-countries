@@ -92,7 +92,7 @@ export default {
 
            this.countriesDetails = this.allCountries.find(countries => countries.name == country)
 
-           if(this.countriesDetails.states){
+           if(this.countriesDetails.states.length > 0){
                this.states = this.countriesDetails.states.map(state => state.name)
            }
            else{
